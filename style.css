@@ -1,0 +1,190 @@
+/*A estrutura do css é composta: pela identificação
+ do elemento seguido de chaves, e por fim dentro das
+  chaves você escolhe o atributo que deseja modificar
+  seguido do parâmetro . Ex.:
+  p{font-size:16px; color: red;}
+
+
+  sempre eu preciso terminar os comandos com ;
+  */
+  /*medidas absolutas - ou seja fixas 
+     px - pixels
+     cm - centímetros
+     mm - milímetros
+  medidas relativas- ou sejaque se ajustam
+    rem - se ajusta de acordo com o tamanho da fonte html
+    %   - relativo ao tamanho do elemento pai / tela*/
+
+.férias{
+      /*alterando a largura da imagem*/
+      width: 50% ;
+      /*alterando a largura da imagem*/
+      height: 50% ;
+  }
+tr,td{
+    /*definindo a cor da borda das linhas e colunas da tabela*/
+    border: 1px double;/*solid; dashed, dotted*/
+    /*definido a cor da borda das linhas e colunas da tabela*/
+    border-color:black;
+}
+td{
+    /*Ajustando largura*/
+    width: 250px;
+    
+  }
+  .linha1{
+    background-color: orange; /*troca a cor de fundo*/
+    text-align: center;/*Alinha no centro*/
+    color:white;/*troca a cor da linha*/
+  }
+  body{
+        background-image: linear-gradient(to bottom,rgb(123, 123, 255),rgb(150, 250, 110),rgb(255, 199, 96)); /*criamos um gradiente para a página web. formas de aplicação rigth, left, top*/
+        font-family: Georgia, 'Times New Roman', Times, serif;/*define a fonte
+        padrão*/
+        color: rgb(253, 253, 253);/**define a cor do texto*/
+        line-height: 1.6;/*define o espaçamento entre as
+        linhas*/
+        padding: 20px;/*espaçamento interno nas bordas*/
+ }
+ /*estilos do titulo principal da página*/
+ h1{
+     text-align:center;/*centraliza o texto*/
+     color: rgb(255, 255, 255);/*aplica cor laranja*/
+     font-size: 3rem;/*altera o tmanho/*
+     margin-bottom: 30px;/*espaço abaixo do título*/
+
+ }
+ h3,h4{
+    color:blue(0, 255, 85);/*cor da letra/fonte*/
+    margin-top:20px;/*espço superior entre as seções*/
+ }
+ /*estilo para todas as imagens*/
+ img{
+   width: 100%;/*ocupa 100% largura do elemento
+   em que ela está*/
+   max-width: 600px;/*limite de largura */
+   height: auto;/*manter a proporção*/
+   border-radius: 12px;/*bordas arredondadas*/
+   margin: 10px 0px;/*espaçamento acima e abaixo
+   entre a img e o conteúdo.*/
+}
+/*estilizando os links*/
+a{
+   color: rgb(255, 51, 0);/*cor da letra/ da fonte */
+   text-decoration: none;/*remove o traçado do link*/
+   }
+   /*evento houver nao links*/
+   a:houver{
+      text-decoration: underline;/*add um traço abaixo
+      do mouse estiver sobre ele*/
+   }
+   /*estilizar todas as listas (ol, li)
+   cor de fundo, espaço interno, bordas arredondadas*/
+   #linhas{
+      background-color: crimson;
+      padding: 10px;
+      border-radius:3px;
+
+   }
+   table td{
+       border: 1px solid #ddd;/*borda de pixel de
+       largura, linha continua e cor cinza*/
+       /*espaçamento interno, alinhar o texto no centro
+       e atribuir uma cor de fundo*/
+   }
+
+   
+   /*estilo de tabela*/
+   table{
+      width: 100%;/*ocupa 100% da largura do elemento
+      ao qual ela está inserida*/
+      border-collapse:collapse;/*juntar as bordas da tabela*/
+      margin-top: 20px;/*espaçoacima da tabela*/
+   }
+ .card{
+     background-color: blanchedalmond;/**cor de fundo**/
+     border-radius: 15px;/*arredondada*/
+     margin: 20px auto;
+     overflow: hidden;/*ocultar o que passar dos limites
+ } do card*/
+     display: inline-block;/*coloca os cards lado a lado*/
+     vertical-align: top;/*alinha os cards pelo topo*/
+     height: 650px;/*define a altura para os cards */
+     transition: tranform0.3s ease;/*animação na 
+     interação com os cards*/
+  
+ }
+ /*estilizar os títulos do card*/
+ .card-title{
+   front-size: 1.5rem;/*modificando o tamanho*/
+   color: darkgreen;/*atribuindo nova cor */
+   margin-bottom: 10px;/*espaço abaixo do título*/
+   margin-left: 10px;/*espaço a esquerda do título*/
+
+   /*estilizar o parágrfo*/
+   .card-text{
+       margin-left: 10px;
+       color: #444;
+   }
+}  /*ajustando imagem*/
+.card-img-top{
+   width: 50%;
+   height: 40%;
+}
+.btn-primary
+  {background-color:#c70d0d;/*cor de fundo*/
+   color: lawngreen;/*cor da letra
+   padding: 10px 16px/*espaço interno na horizontal
+   e vertical*/
+   border-radius: 8px;/*arredondar as bordas*/
+   text-align: center;/*espaço externo entre as
+   bordas do botão e o limite do card*/
+
+}
+
+ 
+
+  p{
+     font-size:19px ;
+  }
+  li{
+     font-size: 19px;
+  }
+  .btn-primary.btn-primary:houver{
+   background-color: #236126;/*mudando a cor
+   do botão ao deixar ao cursor em cima do 
+   elemento*/
+   color: bisque;
+   text-decoration: none;/*retirando traçado do 
+   link*/
+  }
+  /*reposividade*/
+  /*telas pequenas*/
+  @media(max-width:768px){
+     .card{
+        width: 90%;
+        margin: 20px auto;
+        
+     }
+  }
+   
+  .icon-menu{
+   display:flex;/*alinhar os itens
+   horizoltalmente*/
+   justify-content: sapace-aroud;/*distribuir o
+   espaçamento de forma linear (igual) entre eles*/
+   background: linear-gradient(to right,rgba(1, 183, 255, 0.76),rgb(3, 3, 236));/*cor de fundo do
+   menu com degradê*/
+   padding: 15px;/*espaço interno entre os itens
+   do menu*/
+   position: fixed;/*fixa o menu na tela na sua 
+   posição original, no caso horizontal*/
+}
+.icon-menu a{
+   text-decoration: none;
+   color: rgb(182, 253, 253);}
+   /*font-size:; ajusta o tamanho do texto (fonte)*/
+ #carrosel12-slide{
+     width: 80%;
+   border-radius: 180px;
+   }
